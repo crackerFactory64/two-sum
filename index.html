@@ -10,6 +10,7 @@
         color: #fff;
         font-family: monospace;
         letter-spacing: 1px;
+        line-height: 1.7;
       }
 
       h1 {
@@ -19,7 +20,12 @@
   </head>
   <body>
     <h1>Two Sum</h1>
-    <small>Plese refer to the console.</small>
+    <p>
+      "Write a function that takes an array of numbers and a target number. It
+      should find two different items in the array that, when added together,
+      give the target value. The indices of these items should then be returned
+      in an array like so: [index1, index2]."
+    </p>
     <script>
       function twoSum(arr1, arr2, target) {
         const resultArr = [];
@@ -33,7 +39,7 @@
         }
       }
 
-      console.table(twoSum([1, 2, 3, 4, 5], [6, 7, 8, 9, 10], 13));
+      console.log(twoSum([1, 2, 3, 4, 5], [6, 7, 8, 9, 10], 13));
     </script>
   </body>
 </html>
