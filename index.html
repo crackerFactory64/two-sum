@@ -31,11 +31,11 @@
       in an array like so: [index1, index2]."
     </p>
     <script>
-      function twoSum(arr1, arr2, target) {
+      function twoSum(arr, target) {
         const resultArr = [];
-        for (let i = 0; i < arr1.length; i++) {
-          for (let j = 0; j < arr2.length; j++) {
-            if (arr1[i] + arr2[j] === target) {
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = 0; j < arr.length; j++) {
+            if (arr[i] + arr[j] === target) {
               resultArr.push(i, j);
               return resultArr;
             }
@@ -43,7 +43,7 @@
         }
       }
 
-      console.log(twoSum([1, 2, 3, 4, 5], [6, 7, 8, 9, 10], 13));
+      console.log(twoSum([1, 2, 3, 4, 5], 8));
     </script>
   </body>
 </html>
