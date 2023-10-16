@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Sum</title>
+    <style>
+      body {
+        background-color: rgb(36, 122, 94);
+        color: #fff;
+        font-family: monospace;
+        letter-spacing: 1px;
+      }
+
+      h1 {
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Two Sum</h1>
+    <small>Plese refer to the console.</small>
+    <script>
+      function twoSum(arr1, arr2, target) {
+        const resultArr = [];
+        for (let i = 0; i < arr1.length; i++) {
+          for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] + arr2[j] === target) {
+              resultArr.push(i, j);
+              return resultArr;
+            }
+          }
+        }
+      }
+
+      console.table(twoSum([1, 2, 3, 4, 5], [6, 7, 8, 9, 10], 13));
+    </script>
+  </body>
+</html>
